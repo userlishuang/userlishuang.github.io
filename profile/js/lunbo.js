@@ -10,3 +10,8 @@ function change() {
         index = 3;
     }
 }
+$('.col2-2').hover(function(){
+	clearInterval(timer);
+},function(){
+	timer = setInterval(change, 2000);
+})
